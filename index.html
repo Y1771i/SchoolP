@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicon School Tametable</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Шрифт Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Union Clock</h1>
+        <img src="./icon.ico" alt="">
+        <p>Alarm Schedule</p>
+        <div class="schedule">
+            <div>09:00</div>
+            <div>09:40</div>
+            <div>10:00</div>
+            <div>10:40</div>
+            <div>10:45</div>
+            <div>11:25</div>
+            <div>11:30</div>
+            <div>12:10</div>
+            <div>13:30</div>
+            <div>14:10</div>
+            <div>14:15</div>
+            <div>14:55</div>
+            <div>15:20</div>
+            <div>16:00</div>
+            <div>17:00</div>
+        </div>
+        <p id="status">Waiting for alarms...</p>
+
+        <!--! Добавил: -->
+    <div class="audio-controls">
+        <audio id="alarmSound" src="./alarm.mp3" preload="auto"></audio> 
+        <button onclick="playAudio()">Play Alarm Sound</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

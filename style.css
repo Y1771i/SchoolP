@@ -1,0 +1,177 @@
+/* 
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #58f085;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-top: 50px;
+  height: 1366px;
+  height: 768px;
+}
+
+h1, p {
+  margin: 10px 0;
+}
+.schedule {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.schedule div {
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+ */
+
+
+
+/*! Добавил: */
+:root {
+  --font-family: 'Quicksand', sans-serif;
+  --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --text-color: #00ffcc;
+  --container-bg: #1b1b2f;
+  --container-shadow: rgba(0, 255, 128, 0.2);
+  --highlight-color: #BFFF00;
+  --subtext-color: #8a9ba8;
+  --border-color: #4e5d73;
+  --hover-bg: #34344a;
+  --status-color: #ff3366;
+}
+
+body {
+  font-family: var(--font-family); 
+  text-align: center;
+  background: var(--bg-gradient); 
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--container-bg);
+  box-shadow: 0 8px 20px var(--container-shadow);
+  border-radius: 15px;
+  border: 2px solid var(--border-color);
+}
+
+h1 {
+  margin: 10px 0;
+  color: var(--highlight-color);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: var(--subtext-color);
+}
+
+.schedule {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.schedule div {
+  margin: 10px 0;
+  padding: 15px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--container-bg);
+  box-shadow: 2px 2px 10px rgba(0, 255, 128, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.schedule div:hover {
+  background-color: var(--hover-bg);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--status-color);
+}
+
+
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+audio {
+    display: none; /* Скрываем стандартный элемент аудио */
+}
+
+button {
+    background: var(--highlight-color);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #228B22;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: var(--font-family);
+    transition: background 0.3s, transform 0.3s;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--container-shadow);
+}
+
+button:hover {
+    background: var(--hover-bg);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: var(--status-color);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .schedule div {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+  }
+
+  #status {
+    font-size: 1.3rem;
+  }
+}
